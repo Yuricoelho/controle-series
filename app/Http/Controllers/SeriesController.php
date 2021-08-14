@@ -22,7 +22,7 @@ class SeriesController extends Controller
     {
         $serie = Serie::create($request->all());
 
-        echo "Série {$serie->nome} criada com sucesso";
+        return redirect('/series');
 
     }
 }
