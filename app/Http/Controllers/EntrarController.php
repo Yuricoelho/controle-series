@@ -18,6 +18,6 @@ class EntrarController extends Controller
            return redirect()->back()->withErrors('Usuário ou senha inválidos');
        }
 
-       return redirect()->route('/series');
+       return redirect('/series');
     }
 }

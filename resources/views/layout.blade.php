@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-2 d-flex justify-content-between">
+    <a class="navbar-brand" href="/series">Home</a>
+    @auth
+        <a href="/sair" class="text-danger">Sair</a>
+    @endauth
+
+    @guest
+        <a href="/entrar">Entrar</a>
+    @endguest
+</nav>
+
 <div class="container">
     <div class="jumbotron">
         <h1>@yield('cabecalho')</h1>
